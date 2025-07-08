@@ -1,0 +1,45 @@
+{
+  "name": "astron-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:api": "cd api && npm run dev",
+    "build:api": "cd api && npm run build",
+    "start:api": "cd api && npm start",
+    "dev:ui": "vite",
+    "build:ui": "cd ui && npm run build",
+    "start:ui": "cd ui && npm start",
+    "dev": "concurrently \"npm run dev:api\" \"npm run dev:ui\"",
+    "build": "npm run build:api && npm run build:ui"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/astron-collection/astron-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/astron-collection/astron-api/issues"
+  },
+  "homepage": "https://github.com/astron-collection/astron-api#readme",
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.6.0",
+    "dotenv": "^17.1.0",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7",
+    "react": "^19.1.0",
+    "typescript": "^5.8.3",
+    "vite": "^7.0.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "concurrently": "^8.2.2",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.2",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.11"
+  }
+}
