@@ -11,5 +11,14 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.6.0",
+    "react": "^19.1.0",
+    "vite": "^7.0.3"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6"
+  }
 }
